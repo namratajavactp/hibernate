@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping><!--
+According to the relationship each student should have a unique address.
+Since the Student and Address entities are strongly related (composition relation),
+ it is better to store them in a single table. 
+The relational model is shown below.
+The component element is used to map all the Address entity fields to the STUDENT table. 
+In Hibernate terms the Address entity is called the component and it cannot have its own primary key,
+ it uses the primary key of the enclosing Student entity.
+	-->
+	
+	<class name="componentmapping.Student" table="STUDENT">
+		<meta attribute="class-description">This class contains student details.</meta>
+		<id name="studentId" type="long" column="STUDENT_ID">
+			<generator class="native" />
+		</id>
+		<property name="studentName" type="string" not-null="true"
+			column="STUDENT_NAME" />
+		<component name="studentAddress" class="componentmapping.Address">
+			<property name="street" column="ADDRESS_STREET" type="string"
+				length="250" />
+			<property name="city" column="ADDRESS_CITY" type="string"
+				length="50" />
+			<property name="state" column="ADDRESS_STATE" type="string"
+				length="50" />
+			<property name="zipcode" column="ADDRESS_ZIPCODE" type="string"
+				length="10" />
+				
+		</component>
+	</class>
+</hibernate-mapping>

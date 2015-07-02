@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="idbag_incomplete.Person" table="PERSON" lazy="false">
+    <id name="personId"/>
+    
+    
+    <property name="Name"/>
+    <property name="phone"/>
+    <idbag name="addresses" lazy="false" table="personaddressidbag" cascade="save-update">
+    	<collection-id type="java.lang.Integer" column="id">
+    		<generator class="native"/>
+    	</collection-id>
+    	<key column="personId"/>
+    	<element type="long" column="AddressId"/>
+    	
+    </idbag>
+    
+</class>
+
+</hibernate-mapping>

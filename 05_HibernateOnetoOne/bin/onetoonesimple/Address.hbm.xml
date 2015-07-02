@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="onetoonesimple.Address" table="onetooneAddressTable">
+    <id name="addressId" column="address_id">
+    <generator class="assigned" />
+    
+    </id>
+    <property name="doorNo"/>
+    <property name="streetName"/>
+    <property name="city"/>
+    <property name="state"/>
+   <one-to-one name="person"  class="onetoonesimple.Person"  property-ref="address"  /> 
+  <!--    by removing one-to-one mapping and person field and its getter setter methods  
+    we can make this relationship unidirectional
+    -->
+    
+   <!--  This mapping tells Hibernate that the person association in Address is the reverse
+direction of the address association in Person. -->
+ </class>
+</hibernate-mapping>
+

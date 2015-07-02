@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hlib"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/antlr.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/asm.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/commons-collections.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/dom4j.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/jta.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/junit.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/test/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="D:/corporate training/hibernate/hibernate-validator-3.1.0.GA/lib/slf4j-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

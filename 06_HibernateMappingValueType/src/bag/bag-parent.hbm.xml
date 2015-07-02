@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="bag.BagParent" table="bagParent">
+    <id name="id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <bag name="bagImages" table="bag_item_image">
+    
+       	<key column="imageid"/>
+        <element type="string" column="filename" not-null="true"/>
+    </bag>
+  </class>
+</hibernate-mapping>
+<!--
+The difference compared with the earlier mapping is the element part, 
+which tells Hibernate that the collection does not contain references to another
+ entity, but a collection of elements of type String (the lowercase name tells you 
+ it's a Hibernate mapping type/converter). 
+
+-->

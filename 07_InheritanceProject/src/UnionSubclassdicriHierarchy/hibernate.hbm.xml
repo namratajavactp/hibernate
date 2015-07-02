@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="UnionSubclassdicriHierarchy.BillingDetails" table="billingdetails" abstract="true">
+      <id name="billingid">
+          <generator class="assigned"/>
+      </id>
+      <property name="owner"/>
+      <union-subclass name="UnionSubclassdicriHierarchy.CreditCard" table="creditcard">
+          <property name="number"/>
+          <property name="expMonth"/>
+          <property name="expYear"/>
+
+      </union-subclass>
+      <union-subclass name="UnionSubclassdicriHierarchy.BankAccount" table="bankaccount">
+          <property name="account"/>
+          <property name="bankName"/>
+          <property name="swift"/>
+
+      </union-subclass>
+  </class>
+
+</hibernate-mapping>

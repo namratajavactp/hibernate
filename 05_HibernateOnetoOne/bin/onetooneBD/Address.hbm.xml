@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="onetooneBD.Address" table="onetooneAddressTable">
+    <id name="addressId" column="address_id">
+    <generator class="foreign">
+    <param name="property">person</param>
+    </generator>
+    </id>
+    <property name="doorNo"/>
+    <property name="streetName"/>
+    <property name="city"/>
+    <property name="state"/>
+    <one-to-one name="person" class="onetooneBD.Person" constrained="true"   />
+ </class>
+</hibernate-mapping>
+
+
+
+<!--
+constrained="true" means primary key of address table will be the foreign key to person table
+inverse is not supported in one to one.
+-->

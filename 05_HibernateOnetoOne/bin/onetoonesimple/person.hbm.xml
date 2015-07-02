@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="onetoonesimple.Person" table="onetoonePersonTable">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <many-to-one name="address"  column="ADDRESS"  class="onetoonesimple.Address" unique="true" cascade="all"/>
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+   PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="NamedSQLQueries.Product">
+      <id name="id" type="int">
+         <generator class="increment"/>
+      </id>
+
+      <property name="name" type="string"/>
+      <property name="description" type="string"/>
+      <property name="price" type="double"/>
+      
+
+   </class>
+   
+   <query name="HQLpricing">
+    <!--select product.price from Product product where product.price > 25.0-->
+   <![CDATA[
+	 from Product product where product.price > 25.0
+	   ]]>
+	</query>   
+   <sql-query name="SQLpricing">
+      <return-scalar column="id" type="double"/>
+      
+      <![CDATA[
+	   select p.id, p.price from Product p where p.price > 20.0]]>
+   </sql-query>   	
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_06">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.generic.runtimeTarget/JBoss v5.0 4">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-1.6.5.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-antlr-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-antlr-1.6.5.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-junit-1.6.5.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-launcher-1.6.5.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/antlr-2.7.4.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ant-swing-1.6.5.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/asm.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/cglib-full-2.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/checkstyle-all.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/cleanimports.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/concurrent-1.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/dom4j-1.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ehcache-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jaas.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jacc-1_0-fr.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/javassist.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jaxen-1.1-beta-7.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jboss-cache.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jboss-common.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jboss-jmx.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jboss-system.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jgroups-2.2.8.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/jta.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/lucene-core-2.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/mysql.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/oscache-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/proxool-0.8.3.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/swarmcache-1.0rc2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/syndiag2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/transaction-api-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/versioncheck.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/xerces-2.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/MR.RAHUL/F Drive/hibernateworkshop/HibernateLib/xml-apis.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

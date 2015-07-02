@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_0.dtd">
+
+<form-validation>
+
+<!--
+     This is a blank Validator form file with a commented examples.
+-->
+
+    <global>
+
+        <!-- An example global constant
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^\d{5}\d*$</constant-value>
+        </constant>
+        end example-->
+
+    </global>
+
+    <formset>
+
+        
+        <form name="adminRequest">
+            <field
+                property="txtCheckID"
+                depends="required">
+                    <arg0 key="uid.name"/>
+             </field>
+             <field
+                property="txtCheckPassword"
+                depends="required">
+                    <arg0 key="password.name"/>
+             </field>
+        </form>
+        
+        
+        <form name="adminRoleRequest">
+            <field
+                property="txtRoleName"
+                depends="required">
+                    <arg0 key="rolename"/>
+             </field>
+             
+        </form>
+        
+        
+        <form name="adminIndRequest">
+            <field
+                property="txtIndType"
+                depends="required">
+                    <arg0 key="indtype"/>
+             </field>
+             
+        </form>
+        
+		<form name="adminLabelRequest">
+            <field
+                property="txtLabelCat"
+                depends="required">
+                    <arg0 key="labcat"/>
+             </field>
+             <field
+                property="txtLabelDefault"
+                depends="required">
+                    <arg0 key="deflabel"/>
+             </field>
+             <field
+                property="txtLabelLanguage"
+                depends="required">
+                    <arg0 key="langcode"/>
+             </field>
+             <field
+                property="txtLabelCustom"
+                depends="required">
+                    <arg0 key="custlabel"/>
+             </field>
+             
+        </form>
+        
+        <form name="adminLanguageRequest">
+            <field
+                property="txtLangName"
+                depends="required">
+                    <arg0 key="lang"/>
+             </field>
+             
+        </form>
+        
+        <form name="adminQualiRequest">
+            <field
+                property="txtCatType"
+                depends="required">
+                    <arg0 key="qualitype"/>
+             </field>
+             
+        </form>
+        
+        
+        <form name="adminThemeRequest">
+            <field
+                property="txtTheme"
+                depends="required">
+                    <arg0 key="themetype"/>
+             </field>
+             
+        </form>
+		
+    </formset>
+
+    
+
+</form-validation>

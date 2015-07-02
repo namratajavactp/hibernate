@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="emp.EmployeePojo" table="two_EmpTable">
+	
+		 <id name="empid" column="empid">
+				<generator class="hilo">
+                <param name="table">hi_value</param>
+                <param name="column">next_value</param>
+                <param name="max_lo">100</param>
+                  </generator>
+              </id>   
+               
+       	<!--             default table=hibernate_unique_key and defeault_col=next_hi default max_lo=32767 
+     
+
+		
+				<generator class="identity" />	
+			<generator class="native" />
+			<generator class="increment" />	
+		<generator class="hilo" />
+			<generator class="sequence" />
+		
+			<generator class="identity" />
+			 
+			
+		
+		   
+		<id name="empid" >
+			<generator class="sequence">
+			<param name="sequence">MY_SEQUENCE</param>
+			<param name="parameters">
+				INCREMENT BY 1 START WITH 101
+			</param>
+			</generator>
+		</id>  
+		-->
+		<property name="name" column="name"/>
+		<property name="salary" column="salary"/>
+					
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="secondTablePerSubClass.Disc" table="SubDISC">
+        <id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+        
+        <property name="name" column="NAME" type="string"/>
+        <property name="price" column="PRICE" type="int"/>
+        <joined-subclass name="secondTablePerSubClass.AudioDisc" table="SubAUDIODISC">
+            <key column="id"/>
+            <property name="singer" column="SINGER" type="string"/>
+            <property name="numOfSongs" column="NUMOFSONGS" type="int"/>
+        </joined-subclass>
+        <joined-subclass name="secondTablePerSubClass.VideoDisc" table="SubVIDEODISC">
+            <key column="id"/>
+            <property name="director" column="DIRECTOR" type="string"/>
+            <property name="language" column="LANGUAGE" type="string"/>
+        </joined-subclass>
+            
+    </class>    
+</hibernate-mapping>

@@ -1,0 +1,9 @@
+<dwr>
+    <allow>
+        <convert converter="bean" match="com.Dwr"/>
+        <create creator="new" javascript="DwrSample" class="com.DwrSample">
+            <include method="getEvents"/>
+            
+        </create>
+  </allow>
+</dwr>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="array.Person" table="PERSON">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <array name="addresses" cascade="save-update">
+    	<key column="personId"/>
+    	<index column="idx"/>
+    	<one-to-many class="array.Address" />
+    </array>
+    
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="onetooneusingmanytoone.Address" table="onetooneAddressTable">
+    <id name="addressId" column="address_id">
+    
+    </id>
+    <property name="doorNo"/>
+    <property name="streetName"/>
+    <property name="city"/>
+    <property name="state"/>
+    <many-to-one name="person" class="onetooneusingmanytoone.Person" unique="true"/>
+ </class>
+</hibernate-mapping>
+

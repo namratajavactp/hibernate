@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="onetooneBD.Person" table="onetoonePersonTable">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <one-to-one name="address" class="onetooneBD.Address"  cascade="save-update" /> <!-- cascade="all" -->
+
+<!-- if we remove address one to one mapping from person
+than it will be unidirectional association from address to person -->
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+ 	<class name="firstTablePerClassHierarchy.Disc" table="DiscTable">
+ 		<id name="id" type="long" column="DiscId" >
+ 			<generator class="native"/>
+ 		</id>
+ 		
+ 		<discriminator column="DiscType" type="string"/>
+ 		<property  name="name" column="DiskName"/>
+ 		<property name="price" column="DiskPrice" />
+ 		
+ 		<subclass name="firstTablePerClassHierarchy.AudioDisc" discriminator-value="audio">
+ 			<property name="singer"/>
+ 			<property name="numOfSongs"/>
+ 		</subclass>
+ 			
+ 		<subclass name="firstTablePerClassHierarchy.VideoDisc" discriminator-value="video" >
+ 			<property name="director"/>
+ 			<property name="language"/>
+ 		</subclass>
+ 	</class>
+ </hibernate-mapping>	
+ 			
+ 		<!-- We've introduced a few new features in the mapping definition. 
+ 		The most important is the inclusion of the discriminator element. 
+ 		The discriminator column is what Hibernate uses to tell the different 
+ 		sub-classes apart when retrieving classes from the database.
+ 		 If you don't specify a discriminator value, Hibernate uses the object's class name. 
+ 		 The discriminator element in the example mapping tells Hibernate to 
+ 		 look in the event_type column for a string describing the class type. -->	
+ 

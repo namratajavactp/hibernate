@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="onetomanyBD.Person" table="PERSON1">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    
+    <set name="addresses" cascade="all" inverse="true">
+    	<key column="personid"/>
+    	
+    	<one-to-many class="onetomanyBD.Address" />
+    </set>
+    
+</class>
+
+</hibernate-mapping>
+<!--
+recored will not be update in the address table if cascade is not present and inverse is true-->
+
+<!-- 
+inverse=true specifies which end of the association should be synchronized with
+the database if we manipulate the association in Java code.
+-->

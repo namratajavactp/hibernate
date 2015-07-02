@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="list.ListParent" table="listParent">
+   
+    <id name="id" type="int">
+      <generator class="assigned"/>
+   </id>
+   
+   <list name="listImages" table="list_item_image">
+       <key column="item_id"></key>
+       <list-index column="Position"/>
+       <element type="string" column="filename" not-null="true"/>
+   </list>
+   
+   </class>
+</hibernate-mapping>

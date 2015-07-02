@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="manytomany.Person" table="PERSON">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <set name="addresses"  table= "LinkTable" cascade="save-update" >
+    	<key column="personId"/>
+    	<many-to-many class="manytomany.Address" column="addressId" />
+    </set>
+    
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="bag.Person" table="PERSON">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <bag name="addresses" cascade="save-update">
+    	<key column="personId"/>
+    	<one-to-many class="bag.Address" />
+    </bag>
+    
+</class><!--
+If your class represents data using a class derived from the List interface, but you do not want
+to maintain an index column to keep track of the order of items, you can optionally use the
+bag collection mapping to achieve this. The order in which the items are stored and retrieved
+from a bag is completely ignored.
+--></hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="idbag.BagParent" table="bagParent">
+    <id name="id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <idbag name="bagImages" table="bag_item_image">
+        <collection-id type="string" column="image_id">
+            <generator class="uuid"/>
+        </collection-id>
+        <key column="itemid"/>
+        <element type="string" column="filename" not-null="true"/>
+    </idbag>
+  </class>
+</hibernate-mapping>

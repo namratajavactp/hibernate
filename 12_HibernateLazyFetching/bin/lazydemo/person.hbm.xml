@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="lazydemo.Person" table="PERSON1" lazy="false">
+    <id name="personId" />
+    <property name="Name"/>
+    <property name="phone"/>
+    <set name="addresses" cascade="save-update" lazy="false">
+    	<key column="personId"/>
+    	<one-to-many class="lazydemo.Address" />
+    </set>
+    
+</class>
+
+</hibernate-mapping>
